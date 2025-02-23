@@ -58,7 +58,7 @@ def plot_sensor_history(history, sensor_name, unit=""):
     ax.plot(times, history, marker='o', linestyle='-', color='b')
     ax.set_ylabel(f"{sensor_name} ({unit})", fontsize=15)
     ax.grid(True, axis='y')
-    ax.set_xlim(0, max(20, len(history)-1))
+    ax.set_xlim(0, 20)
     ax.set_xticks([])
     ax.tick_params(axis='y', labelsize=12)
     st.pyplot(fig)
